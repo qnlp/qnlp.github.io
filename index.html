@@ -4,91 +4,210 @@
 <title>Junwei Zhang's Homepage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" href="https://qnlp.github.io/favicon.ico" type="image/x-icon">
+
+<style type="text/css">
+@media only screen and (max-width: 700px) {
+	:root{
+		--nav-padding: 10px;
+		--section-padding: 30px;
+	}
+}
+@media only screen and (min-width: 700px) {
+	:root{
+		--nav-padding: 30px;
+		--section-padding: 50px;
+	}
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+html{
+	background-color: silver;
+}
+body{
+	background-color: white;
+	margin: 0px auto;
+	max-width: 1000px;
+}
+header{
+	border-bottom: 0px solid silver;
+}
+header > img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+nav{
+	line-height: 80px;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 0px var(--nav-padding);
+}
+section{
+	font-size: 16px;
+	line-height: 25px;
+	padding: 0px var(--section-padding);
+}
+#Personal_Information{
+	text-indent: 2em;
+	text-align: justify;
+}
+@media only screen and (max-width: 700px) {
+	#Education_Experience{
+		display: grid; 
+		grid-template-columns: auto 1fr; 
+		list-style-type: disc;
+		list-style-position: inside;		
+	}
+	#Education_Experience > .begin{
+		display: list-item;
+	}
+	#Education_Experience > .end{
+		grid-column-start: 1;
+  		grid-column-end: 3;
+  		text-indent: 1.3em;
+	}
+}
+@media only screen and (min-width: 700px) {
+	#Education_Experience{
+		display: grid; 
+		grid-template-columns: auto auto 1fr; 
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+	#Education_Experience > .begin{
+		display: list-item;
+	}
+	#Education_Experience > .center, .end{
+		text-indent: 2em;
+	}
+}
+#Research_Interests{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#Research_Interests > div{
+	display: list-item;
+}
+#Conference_Papers{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#Conference_Papers > div{
+	display: list-item;
+	text-align: justify;
+	padding: 5px 0px;
+}
+#Journal_Papers{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#Journal_Papers > div{
+	display: list-item;
+	text-align: justify;
+	padding: 5px 0px;
+}
+#Patents{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#Patents > div{
+	display: list-item;
+	text-align: justify;
+	padding: 5px 0px;
+}
+footer{
+	text-align: center;
+	font-size: 12px;
+	line-height: 60px;
+	border-top: 1px solid silver;
+	margin-top: 150px;
+}
+
+</style>
+
+
 <body>
-<!--头部-->
-<h1 align="center">Welcome to Junwei Zhang's Homepage!</h1>
 
-	
-	
+
+<!--主页头部-->
+<header>
+<img src="./banner.png">
+</header>
+
+
 <!--个人简介-->
-<h3>Personal Information:</h3>
-<p style="padding-left: 30px; text-indent: 2em;">
-	Junwei Zhang is a Ph.D Student at School of Computer Science and Technology, College of Intelligence and Computing, Tianjin University, Tianjin, China. His current research interests include Quantum Machine Learning, Quantum Cognitive and Natural Language Processing. 
-</p>
-<p style="padding-left: 30px; text-indent: 2em;">
-	ORCiD ID: 0000-0001-6400-7242
-</p>	
-
+<nav>Personal Information:</nav>
+<section id="Personal_Information">
+Junwei Zhang, male, born in March 1989, is a Ph.D student at School of Computer Science and Technology, College of Intelligence and Computing, Tianjin University, China. His current research interests include Quantum Machine Learning, Quantum Cognition and Natural Language Processing. In the past, he has published more than ten academic papers as the first author, obtained several patents, and was invited as a reviewer by AAAI, ECAI, etc.
+</section>
 
 
 <!--教育背景-->
-<h3>Education Experience:</h3>
-<div style="display: grid; grid-template-columns: auto auto 1fr; text-indent: 2em;">
-	<span>2017.9 - Now:</span>
-	<span>Ph.D student,</span>
-	<span>Tianjin University, China.</span>
-	<span>2015.9 - 2017.6:</span>
-	<span>Master,</span>
-	<span>Harbin University of Commerce, China.</span>
-	<span>2009.9 - 2014.6:</span>
-	<span>Bachelor,</span>
-	<span>Tiangong University, China.</span>
-</div>
+<nav>Education Experience:</nav>
+<section id="Education_Experience">
+	<div class="begin">2017.9 - Now:</div>
+	<div class="center">Ph.D student,</div>
+	<div class="end">Tianjin University, China.</div>
+	<div class="begin">2015.9 - 2017.6:</div>
+	<div class="center">Master,</div>
+	<div class="end">Harbin University of Commerce, China.</div>
+	<div class="begin">2009.9 - 2014.6:</div>
+	<div class="center">Bachelor,</div>
+	<div class="end">Tiangong University, China.</div>
+</section>
 
 
-	
 <!--研究方向-->
-<h3>Research Interests:</h3>
-<ul>
-  	<li>Quantum Machine Learning (QML)</li>
-	<li>Natural Language Processing (NLP)</li>
-	<li>Word Sense Disambiguation (WSD)</li>
-</ul>	
+<nav>Research Interests:</nav>
+<section id="Research_Interests">
+	<div>Quantum Machine Learning (QML)</div>
+	<div>Natural Language Processing (NLP)</div>
+	<div>Word Sense Disambiguation (WSD)</div>
+</section>
 
 
-	
 <!--会议论文-->
-<h3>Conference Papers:</h3>
-<ul> 
-	<li><b>Junwei Zhang</b>, Ruifang He et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/AAAI2023.pdf" download>Quantum-inspired Representation for Long-tail Senses of Word Sense Disambiguation.</a> AAAI 2023.</li>
-	<li><b>Junwei Zhang</b>, Ruifang He et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/CIKM2022.pdf" download>Disentangled Representation for Long-tail Senses of Word Sense Disambiguation.</a> CIKM 2022.</li>
-	<li><b>Junwei Zhang</b>, Ruifang He et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/ECMLPKDD2022.pdf" download>Bi-matching Mechanism to Combat Long-tail Senses of Word Sense Disambiguation.</a> ECML-PKDD 2022.</li>
-	<li><b>Junwei Zhang</b>, Zhao Li et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/IJCNN2022(2).pdf" download>Feedforward Neural Network Reconstructed from High-order Quantum Systems.</a> IJCNN 2022.</li>
-	<li><b>Junwei Zhang</b>, Zhao Li et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/IJCNN2022(1).pdf" download>Neural Network Model Reconstructed from Entangled Quantum States.</a> IJCNN 2022.</li>
-	<li><b>Junwei Zhang</b>, Zhao Li et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/PAKDD2022.pdf" download>Quantum Entanglement Inspired Correlation Learning for Classification.</a> PAKDD 2022.</li>
-	<li><b>Junwei Zhang</b>, Zhao Li et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/IJCNN2021(1).pdf" download>Interactive Quantum Classifier Inspired by Quantum Open System Theory.</a> IJCNN 2021.</li>
-  	<li><b>Junwei Zhang</b>, Ruifang He et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/IJCNN2021(2).pdf" download>Quantum Correlation Revealed by Bell State for Classification Tasks.</a> IJCNN 2021.</li>
-	<li><b>Junwei Zhang</b>, Yuexian Hou et al. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/ECAI2020.pdf" download>Strong Statistical Correlation Revealed by Quantum Entanglement for Supervised Learning.</a> ECAI 2020.</li>
-
-	<li>Peng Guo, <b>Junwei Zhang</b> et al. Quantum-inspired DMATT-BiGRU for Conversational Sentiment Analysis. ICTAI 2019.</li>
-	<li>Xiang Li, Zhigang Zhao et al. Variational Autoencoder based Latent Factor Decoding of Multichannel EEG for Emotion Recognition. BIBM 2019.</li>
-</ul>
-
+<nav>Conference Papers:</nav>
+<section id="Conference_Papers">
+	<div><b>Junwei Zhang</b>, Ruifang He, Fengyu Guo: <a href="https://qnlp.github.io/papers/AAAI2023.pdf" download>Quantum-inspired Representation for Long-tail Senses of Word Sense Disambiguation.</a> AAAI 2023: 1-9</div>
+	<div><b>Junwei Zhang</b>, Ruifang He, Fengyu Guo, Jinsong Ma, Mengnan Xiao: <a href="https://qnlp.github.io/papers/CIKM2022.pdf" download>Disentangled Representation for Long-tail Senses of Word Sense Disambiguation.</a> CIKM 2022: 2569-2579</div>
+	<div><b>Junwei Zhang</b>, Ruifang He, Fengyu Guo: <a href="https://qnlp.github.io/papers/ECMLPKDD2022.pdf" download>Bi-matching Mechanism to Combat Long-tail Senses of Word Sense Disambiguation.</a> ECML-PKDD 2022: 1-9</div>
+	<div><b>Junwei Zhang</b>, Zhao Li, Hao Peng, Ming Li, Xiaofen Wang: <a href="https://qnlp.github.io/papers/IJCNN2022(2).pdf" download>Feedforward Neural Network Reconstructed from High-order Quantum Systems.</a> IJCNN 2022: 1-8</div>
+	<div><b>Junwei Zhang</b>, Zhao Li, Jianmao Xiao, Ming Li: <a href="https://qnlp.github.io/papers/IJCNN2022(1).pdf" download>Neural Network Model Reconstructed from Entangled Quantum States.</a> IJCNN 2022: 1-8</div>
+	<div><b>Junwei Zhang</b>, Zhao Li, Juan Wang, Yinghui Wang, Shichang Hu, Jie Xiao, Zhaolin Li: <a href="https://qnlp.github.io/papers/PAKDD2022.pdf" download>Quantum Entanglement Inspired Correlation Learning for Classification.</a> PAKDD (2) 2022: 58-70</div>
+	<div><b>Junwei Zhang</b>, Zhao Li, Ruifang He, Ji Zhang, Biao Wang, Zhaolin Li, Tianyuan Niu: <a href="https://qnlp.github.io/papers/IJCNN2021(1).pdf" download>Interactive Quantum Classifier Inspired by Quantum Open System Theory.</a> IJCNN 2021: 1-7</div>
+	<div><b>Junwei Zhang</b>, Ruifang He, Zhao Li, Ji Zhang, Biao Wang, Zhaolin Li, Tianyuan Niu: <a href="https://qnlp.github.io/papers/IJCNN2021(2).pdf" download>Quantum Correlation Revealed by Bell State for Classification Tasks.</a> IJCNN 2021: 1-8</div>
+	<div><b>Junwei Zhang</b>, Yuexian Hou, Zhao Li, Long Zhang, Xia Chen: <a href="https://qnlp.github.io/papers/ECAI2020.pdf" download>Strong Statistical Correlation Revealed by Quantum Entanglement for Supervised Learning.</a> ECAI 2020: 1650-1657</div>
+	<div>Peng Guo, <b>Junwei Zhang</b>, Yuexian Hou, Xiujun Gong, Panpan Wang, Yazhou Zhang: Quantum-inspired DMATT-BiGRU for Conversational Sentiment Analysis. ICTAI 2019: 1602-1606</div>
+	<div>Xiang Li, Zhigang Zhao, Dawei Song, Yazhou Zhang, Chunyang Niu, <b>Junwei Zhang</b>, Jidong Huo, Jing Li: Variational Autoencoder based Latent Factor Decoding of Multichannel EEG for Emotion Recognition. BIBM 2019: 684-687</div>
+</section>
 
 
 <!--期刊论文-->
-<h3>Journal Papers:</h3>
-<ul>
-  	<li><b>Junwei Zhang</b>, Zhao Li. <a style="text-decoration: none;" href="https://qnlp.github.io/papers/CJE2020.pdf" download>Quantum Contextuality for Training Neural Networks.</a> CJE 2020.</li>
-</ul>	
-
+<nav>Journal Papers:</nav>
+<section id="Journal_Papers">
+	<div><b>Junwei Zhang</b>, Zhao Li: <a href="https://qnlp.github.io/papers/CJE2020.pdf" download>Quantum Contextuality for Training Neural Networks.</a> Chinese Journal of Electronics, 2020, 29(6): 1178-1184</div>
+</section>
 
 
 <!--专利-->
-<h3>Patents:</h3>
-<ul>
-  	<li>贺瑞芳, <b>张俊伟</b>. 一种融合定义与场景匹配机制的长尾词义消歧方法. No.2022111313837.</li>
-	<li>贺瑞芳, <b>张俊伟</b>. 一种融合解耦表征的长尾词义消歧方法. No.2022112652797.</li>
-</ul>	
-
-
+<nav>Patents:</nav>
+<section id="Patents">
+	<div>贺瑞芳, <b>张俊伟</b>: 一种融合定义与场景匹配机制的长尾词义消歧方法. No.2022111313837.</div>
+	<div>贺瑞芳, <b>张俊伟</b>: 一种融合解耦表征的长尾词义消歧方法. No.2022112652797.</div>
+</section>
 
 
 <!--底部-->
-<hr style="margin-top: 100px;">
-<p align="center" style="font-size: 14px">Copyright: Junwei Zhang &emsp; Email: junwei@tju.edu.cn &emsp; Website: qnlp.github.io</p>
+<footer>
+Copyright: Junwei Zhang &emsp; Website: qnlp.github.io &emsp; Email: junwei@tju.edu.cn
+</footer>
 
 
-	
 </body>
 </html>
