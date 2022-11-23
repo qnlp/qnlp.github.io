@@ -68,7 +68,7 @@ section > div{
 		display: list-item;
 	}
 	#Education_Experience > .center{
-		text-indent: 1em;
+		text-indent: 1.5em;
 	}
 	#Education_Experience > .end{
 		grid-column-start: 1;
