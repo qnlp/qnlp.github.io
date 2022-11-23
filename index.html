@@ -42,10 +42,11 @@ header > img{
 	height: auto;
 }
 nav{
-	line-height: 80px;
+	line-height: 60px;
 	font-size: 20px;
 	font-weight: bolder;
 	padding: 0px var(--nav-padding);
+	padding-top: 20px;
 }
 section{
 	font-size: 16px;
@@ -134,6 +135,19 @@ footer{
 	border-top: 1px solid silver;
 	margin-top: 150px;
 }
+footer > i{
+	font-style: normal;
+}
+@media only screen and (max-width: 700px) {
+	footer > i{
+		display: none;
+	}
+}
+@media only screen and (min-width: 700px) {
+	footer > i{
+		display: ;
+	}
+}
 
 </style>
 
@@ -212,7 +226,7 @@ Junwei Zhang, male, born in March 1989, is a Ph.D student at School of Computer 
 
 <!--底部-->
 <footer>
-Copyright: Junwei Zhang &emsp; Website: qnlp.github.io &emsp; Email: junwei@tju.edu.cn
+Copyright: Junwei Zhang &emsp; <i>Website: qnlp.github.io</i> &emsp; Email: junwei@tju.edu.cn
 </footer>
 
 
