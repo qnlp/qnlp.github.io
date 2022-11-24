@@ -43,7 +43,7 @@ nav{
 	font-size: 20px;
 	font-weight: bolder;
 	padding: 0px var(--nav-padding);
-	padding-top: 20px;
+	margin-top: 20px;
 }
 section{
 	font-size: 16px;
