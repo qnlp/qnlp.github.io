@@ -98,6 +98,10 @@ section:nth-of-type(4) > div{
 	text-align: justify;
 	padding: 5px 0px;
 }
+section:nth-of-type(4) > div:after{
+	content: ' (' attr(data-level) ')';
+	/*font-style: italic;*/
+}
 /*Journal Papers*/
 section:nth-of-type(5){
 	list-style-type: disc;
@@ -107,6 +111,10 @@ section:nth-of-type(5) > div{
 	display: list-item;
 	text-align: justify;
 	padding: 5px 0px;
+}
+section:nth-of-type(5) > div:after{
+	content: ' (' attr(data-level) ')';
+	/*font-style: italic;*/
 }
 /*Patents*/
 section:nth-of-type(6){
