@@ -9,10 +9,10 @@ body{
 	background-color: white;
 	margin: 0px auto;
 	max-width: 1000px;
-	-webkit-text-size-adjust : 100% ;
-	-moz-text-size-adjust : 100% ;
-	-ms-text-size-adjust : 100% ;
-	text-size-adjust : 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 @media only screen and (max-width: 700px) {
 	:root{
@@ -58,11 +58,13 @@ section > div{
 	font-size: 16px;
 	line-height: 25px;
 }
+
 /*Personal Information*/
 section:nth-of-type(1) {
 	text-indent: 2em;
 	text-align: justify;
 }
+
 /*Education Experience*/
 section:nth-of-type(2){
 	display: grid; 
@@ -80,6 +82,7 @@ section:nth-of-type(2) > div:nth-of-type(3n+3){
 	grid-column: var(--grid-column);
 	text-indent: 2em;
 }
+
 /*Research Interests*/
 section:nth-of-type(3){
 	list-style-type: disc;
@@ -88,6 +91,7 @@ section:nth-of-type(3){
 section:nth-of-type(3) > div{
 	display: list-item;
 }
+
 /*Conference Papers*/
 section:nth-of-type(4){
 	list-style-type: disc;
@@ -102,6 +106,7 @@ section:nth-of-type(4) > div:after{
 	content: ' (' attr(data-level) ')';
 	/*font-style: italic;*/
 }
+
 /*Journal Papers*/
 section:nth-of-type(5){
 	list-style-type: disc;
@@ -116,6 +121,7 @@ section:nth-of-type(5) > div:after{
 	content: ' (' attr(data-level) ')';
 	/*font-style: italic;*/
 }
+
 /*Patents*/
 section:nth-of-type(6){
 	list-style-type: disc;
@@ -126,6 +132,7 @@ section:nth-of-type(6) > div{
 	text-align: justify;
 	padding: 5px 0px;
 }
+
 /*footer*/
 footer{
 	text-align: center;
