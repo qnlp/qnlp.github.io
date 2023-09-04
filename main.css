@@ -65,7 +65,8 @@ section:nth-of-type(1) {
 	text-align: justify;
 }
 
-/*Education Experience*/
+
+/*Word Experience*/
 section:nth-of-type(2){
 	display: grid; 
 	grid-template-columns: var(--grid-template-columns);
@@ -83,31 +84,35 @@ section:nth-of-type(2) > div:nth-of-type(3n+3){
 	text-indent: 2em;
 }
 
-/*Research Interests*/
+
+/*Education Experience*/
 section:nth-of-type(3){
+	display: grid; 
+	grid-template-columns: var(--grid-template-columns);
 	list-style-type: disc;
-	list-style-position: inside;
+	list-style-position: inside;		
 }
-section:nth-of-type(3) > div{
+section:nth-of-type(3) > div:nth-of-type(3n+1){
 	display: list-item;
 }
+section:nth-of-type(3) > div:nth-of-type(3n+2){
+	text-indent: 2em;
+}
+section:nth-of-type(3) > div:nth-of-type(3n+3){
+	grid-column: var(--grid-column);
+	text-indent: 2em;
+}
 
-/*Conference Papers*/
+/*Research Interests*/
 section:nth-of-type(4){
 	list-style-type: disc;
 	list-style-position: inside;
 }
 section:nth-of-type(4) > div{
 	display: list-item;
-	text-align: justify;
-	padding: 5px 0px;
-}
-section:nth-of-type(4) > div:after{
-	content: ' (' attr(data-level) ')';
-	/*font-style: italic;*/
 }
 
-/*Journal Papers*/
+/*Conference Papers*/
 section:nth-of-type(5){
 	list-style-type: disc;
 	list-style-position: inside;
@@ -122,12 +127,27 @@ section:nth-of-type(5) > div:after{
 	/*font-style: italic;*/
 }
 
-/*Patents*/
+/*Journal Papers*/
 section:nth-of-type(6){
 	list-style-type: disc;
 	list-style-position: inside;
 }
 section:nth-of-type(6) > div{
+	display: list-item;
+	text-align: justify;
+	padding: 5px 0px;
+}
+section:nth-of-type(6) > div:after{
+	content: ' (' attr(data-level) ')';
+	/*font-style: italic;*/
+}
+
+/*Patents*/
+section:nth-of-type(7){
+	list-style-type: disc;
+	list-style-position: inside;
+}
+section:nth-of-type(7) > div{
 	display: list-item;
 	text-align: justify;
 	padding: 5px 0px;
