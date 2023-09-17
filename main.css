@@ -142,12 +142,23 @@ section:nth-of-type(6) > div:after{
 	/*font-style: italic;*/
 }
 
-/*Patents*/
+/*Invention Patents*/
 section:nth-of-type(7){
 	list-style-type: disc;
 	list-style-position: inside;
 }
 section:nth-of-type(7) > div{
+	display: list-item;
+	text-align: justify;
+	padding: 5px 0px;
+}
+
+/*Software Copyright*/
+section:nth-of-type(8){
+	list-style-type: disc;
+	list-style-position: inside;
+}
+section:nth-of-type(8) > div{
 	display: list-item;
 	text-align: justify;
 	padding: 5px 0px;
