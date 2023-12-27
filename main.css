@@ -61,12 +61,12 @@ section > div{
 	line-height: 25px;
 }
 
+
 /*Personal Information*/
 section:nth-of-type(1) {
 	text-indent: 2em;
 	text-align: justify;
 }
-
 
 /*Work Experience*/
 section:nth-of-type(2){
@@ -85,7 +85,6 @@ section:nth-of-type(2) > div:nth-of-type(3n+3){
 	grid-column: var(--grid-column);
 	text-indent: var(--text-indent);
 }
-
 
 /*Education Experience*/
 section:nth-of-type(3){
