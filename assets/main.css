@@ -52,8 +52,6 @@ nav{
 	margin-top: 20px;
 }
 section{
-	font-size: 16px;
-	line-height: 25px;
 	padding: 0px var(--section-padding);
 }
 section > div{
