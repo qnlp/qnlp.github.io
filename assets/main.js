@@ -1,5 +1,5 @@
 window.onload = function() {
-	hide('bbb');
+	//hide('bbb');
 }
 
 function show(name){
