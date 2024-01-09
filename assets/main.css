@@ -53,15 +53,14 @@ nav{
 }
 section{
 	padding: 0px var(--section-padding);
+	font-size: 16px;
+	line-height: 25px;
 }
 section > div{
 	font-size: 16px;
 	line-height: 25px;
 }
-section > p{
-	font-size: 16px;
-	line-height: 25px;
-}
+
 
 
 /*Personal Information*/
