@@ -58,12 +58,9 @@ section > div{
 	font-size: 16px;
 	line-height: 25px;
 }
-section > label{
-	background-color: #DDDDDD;
-	padding: 0px 10px;
+section > p{
 	font-size: 16px;
-	font-weight: bolder;
-	margin-left: 10px;
+	line-height: 25px;
 }
 
 
