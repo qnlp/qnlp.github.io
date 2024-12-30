@@ -39,6 +39,7 @@ a{
 .resources{
 	font-style: italic; 
 	text-decoration: underline;
+	font-size: 15px;
 }
 header{
 	border-bottom: 0px solid silver;
