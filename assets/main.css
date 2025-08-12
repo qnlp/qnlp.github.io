@@ -37,9 +37,22 @@ a{
 	color: inherit;
 }
 .resources{
-	font-style: italic; 
+	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.resources > a{
 	font-size: 15px;
 	text-decoration: underline;
+}
+.resources:before{
+	content: ' [';
+	font-style: normal;
+}
+.resources:after{
+	content: '] ';
+	font-style: normal;
 }
 header{
 	border-bottom: 0px solid silver;
