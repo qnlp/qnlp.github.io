@@ -181,7 +181,7 @@ section:nth-of-type(6) > div:after{
 	/*font-style: italic;*/
 }
 
-/*Invention Patents*/
+/*Technical Standards*/
 section:nth-of-type(7){
 	list-style-type: disc;
 	list-style-position: inside;
@@ -192,7 +192,7 @@ section:nth-of-type(7) > div{
 	padding: 5px 0px;
 }
 
-/*Software Copyrights*/
+/*Invention Patents*/
 section:nth-of-type(8){
 	list-style-type: disc;
 	list-style-position: inside;
@@ -203,7 +203,7 @@ section:nth-of-type(8) > div{
 	padding: 5px 0px;
 }
 
-/*Hosted projects*/
+/*Software Copyrights*/
 section:nth-of-type(9){
 	list-style-type: disc;
 	list-style-position: inside;
@@ -214,7 +214,7 @@ section:nth-of-type(9) > div{
 	padding: 5px 0px;
 }
 
-/*involved projects*/
+/*Hosted projects*/
 section:nth-of-type(10){
 	list-style-type: disc;
 	list-style-position: inside;
@@ -225,12 +225,23 @@ section:nth-of-type(10) > div{
 	padding: 5px 0px;
 }
 
-/*Honors and Awards*/
+/*involved projects*/
 section:nth-of-type(11){
 	list-style-type: disc;
 	list-style-position: inside;
 }
 section:nth-of-type(11) > div{
+	display: list-item;
+	text-align: justify;
+	padding: 5px 0px;
+}
+
+/*Honors and Awards*/
+section:nth-of-type(12){
+	list-style-type: disc;
+	list-style-position: inside;
+}
+section:nth-of-type(12) > div{
 	display: list-item;
 	text-align: justify;
 	padding: 5px 0px;
