@@ -225,23 +225,12 @@ section:nth-of-type(10) > div{
 	padding: 5px 0px;
 }
 
-/*involved projects*/
+/*Honors and Awards*/
 section:nth-of-type(11){
 	list-style-type: disc;
 	list-style-position: inside;
 }
 section:nth-of-type(11) > div{
-	display: list-item;
-	text-align: justify;
-	padding: 5px 0px;
-}
-
-/*Honors and Awards*/
-section:nth-of-type(12){
-	list-style-type: disc;
-	list-style-position: inside;
-}
-section:nth-of-type(12) > div{
 	display: list-item;
 	text-align: justify;
 	padding: 5px 0px;
